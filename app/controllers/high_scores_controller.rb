@@ -69,6 +69,6 @@ class HighScoresController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def high_score_params
-      params.require(:high_score).permit(:username, :score, :game)
+      params.require(:high_score).permit(:username, :score, :game, :team, :date)
     end
 end

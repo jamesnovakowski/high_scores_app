@@ -8,6 +8,8 @@
       <th>Username</th>
       <th>Score</th>
       <th>Game</th>
+      <th>Team</th>
+      <th>Date</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,6 +20,8 @@
         <td><%= high_score.username %></td>
         <td><%= high_score.score %></td>
         <td><%= high_score.game %></td>
+        <td><%= high_score.team %></td>
+        <td><%= high_score.date %></td>
         <td><%= link_to 'Show', high_score %></td>
         <td><%= link_to 'Edit', edit_high_score_path(high_score) %></td>
         <td><%= link_to 'Destroy', high_score, method: :delete, data: { confirm: 'Are you sure?' } %></td>
